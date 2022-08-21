@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nvL-oo-QMd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hackingwithswift2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxo-Ae-XjN">
+                                <rect key="frame" x="107" y="358" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xxo-Ae-XjN" secondAttribute="height" multiplier="2:1" id="rlx-Nl-thm"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="poland"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOb-8p-bpn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lE0-xy-xrV">
+                                <rect key="frame" x="107" y="98" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lE0-xy-xrV" secondAttribute="height" multiplier="2:1" id="1jp-eN-Qid"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="monaco">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ce-GA-Ugi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHB-Yf-2cU">
+                                <rect key="frame" x="107" y="228" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hHB-Yf-2cU" secondAttribute="height" multiplier="2:1" id="XuO-16-r1h"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="italy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="isp-eZ-2NS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Xxo-Ae-XjN" secondAttribute="bottom" constant="20" id="Ovy-lj-AWv"/>
+                            <constraint firstItem="Xxo-Ae-XjN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Th7-mN-gzT"/>
+                            <constraint firstItem="Xxo-Ae-XjN" firstAttribute="height" secondItem="hHB-Yf-2cU" secondAttribute="height" id="fvh-jO-dxD"/>
+                            <constraint firstItem="hHB-Yf-2cU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gsP-bi-T7n"/>
+                            <constraint firstItem="hHB-Yf-2cU" firstAttribute="height" secondItem="lE0-xy-xrV" secondAttribute="height" id="nWr-py-N0n"/>
+                            <constraint firstItem="lE0-xy-xrV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="r5e-g9-R6M"/>
+                            <constraint firstItem="Xxo-Ae-XjN" firstAttribute="top" secondItem="hHB-Yf-2cU" secondAttribute="bottom" constant="30" id="rxR-JE-7R9"/>
+                            <constraint firstItem="lE0-xy-xrV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sbd-9l-ti8"/>
+                            <constraint firstItem="hHB-Yf-2cU" firstAttribute="top" secondItem="lE0-xy-xrV" secondAttribute="bottom" constant="30" id="y7i-UN-hJc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="op2-dc-mlK"/>
+                    <connections>
+                        <outlet property="button1" destination="lE0-xy-xrV" id="bi6-0T-kdM"/>
+                        <outlet property="button2" destination="hHB-Yf-2cU" id="dtL-VR-Ohp"/>
+                        <outlet property="button3" destination="Xxo-Ae-XjN" id="Bjh-Ow-eOC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="69.642857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1vp-8R-XxT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nvL-oo-QMd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="M1z-Oa-gQh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yh5-y4-wBb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRq-RZ-ok3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="italy" width="200" height="100"/>
+        <image name="monaco" width="200" height="100"/>
+        <image name="poland" width="200" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
